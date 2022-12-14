@@ -10,14 +10,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: lightgray;
+  background-color: #846B92;
   padding: 1rem;
 }
 
 .toc-title {
   text-align: center;
-  border: 1px solid black;
+  color: #EEEEEE;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.toc-list {
+  list-style-type: none;
+}
+
+.toc-list a {
+  color: #EEEEEE;
 }
 
 .song-card {
@@ -29,11 +38,15 @@ body {
   margin: 3rem 1rem;
   padding: 1rem;
   gap: 1rem;
-  border: 1px solid black;
-  background-color: lightgray;
+  border: 2px solid #846B92;
+  background-color: #928391;
 }
 
 .titre {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.song-card a {
+  color: #DDDDDD;
 }
