@@ -1,6 +1,23 @@
-* {
+body {
   box-sizing: border-box;
   font-family: 'Verdana', 'Arial', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+#toc {
+  font-family: 'Overpass', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+.toc-title {
+  text-align: center;
+  border: 1px solid black;
 }
 
 .song-card {
