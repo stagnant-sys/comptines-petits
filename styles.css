@@ -3,30 +3,120 @@ body {
   font-family: 'Verdana', 'Arial', sans-serif;
   margin:0;
   padding:0;
+  background-color: #E2DAD4;
+  padding-bottom: 10rem;
+}
+
+main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  background-color: #3D5330;
+  padding:1rem;
+}
+
+.header-title h1 {
+  font-family: 'Berkshire Swash', cursive;
+  text-align: center;
+  color: #EEEEEE;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.header-title h3 {
+  font-family: 'Berkshire Swash', cursive;
+  text-align: center;
+  color: #FFFFFF;
+  font-size:1.5rem;
+}
+
+.nav-toggle {
+  position:fixed;
+  bottom:0;
+  width: 100%;
+  padding: 1rem;
+  border-top: 2px solid #3D5330;
+}
+
+@media (min-width: 40rem) {
+  .nav-toggle {
+    display:none;
+  }
+}
+
+.mobile-nav {
+  transform: translateY(200%);
+  background: #A9AC9B;
+  position:fixed;
+  width:100%;
+  top:0;
+  height:100vh;
+  z-index:10;
+  transition: transform 300ms ease-out;
+}
+
+.mobile-nav__arrow {
+  height: 1rem;
+}
+
+.open-menu {
+  transform: translate(0);
+}
+
+.mobile-nav__close {
+  width:100%;
 }
 
 #toc {
-  font-family: 'Overpass', sans-serif;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
-  background-color: #846B92;
+  align-items: center;
+  text-align: center;
+  background-color: #A9AC9B;
   padding: 1rem;
 }
 
-.toc-title {
-  text-align: center;
-  color: #EEEEEE;
-  font-weight: 700;
-  font-size: 1.5rem;
+@media (min-width:40rem) {
+  #toc {
+  display:flex;
+  }
+}
+
+#toc h2 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 200;
 }
 
 .toc-list {
   list-style-type: none;
+  padding:0;
+  margin:0;
 }
 
 .toc-list a {
   color: #EEEEEE;
+}
+
+li {
+  margin: 0.5rem;
+  }
+
+.download-btn {
+  padding: 0.2rem 0.5rem;
+  margin:2rem;
+  border: 2px solid #3D5330;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.download-btn a {
+  color: #7F5428;
+  font-family: 'Pacifico', sans-serif;
+  font-size: 1.5rem;
 }
 
 .song-card {
@@ -38,15 +128,44 @@ body {
   margin: 3rem 1rem;
   padding: 1rem;
   gap: 1rem;
-  border: 2px solid #846B92;
-  background-color: #928391;
+  background-color: #A9AC9B;
+  border: 5px solid #3D5330;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px black;
+  color: white;
+}
+
+@media (min-width: 40rem) {
+  .song-card {
+    width: 60%;
+  }
 }
 
 .titre {
+  font-family: 'Pacifico', cursive;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .song-card a {
-  color: #DDDDDD;
+  color: #7F5428;
+  padding: 0.2rem 0.5rem;
+  margin:0.5rem;
+  border: 2px solid #3D5330;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.toc-return {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .toc-return {
+    display: block;
+  }
+}
+
+.image {
+  height:200px;
 }
