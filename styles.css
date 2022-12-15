@@ -12,6 +12,11 @@ main {
   flex-direction: column;
   align-items: center;
 }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .header-title {
   background-color: #3D5330;
@@ -31,6 +36,21 @@ main {
   text-align: center;
   color: #FFFFFF;
   font-size:1.5rem;
+}
+
+.presentation {
+  color: white;
+  font-family: 'Satisfy', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .presentation {
+  width: 50%;
+  text-align:center;
+  }
 }
 
 .nav-toggle {
