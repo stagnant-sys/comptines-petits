@@ -2,6 +2,7 @@ const TOGGLE_BUTTON = document.querySelector('.nav-toggle');
 const MOBILE_NAV = document.querySelector('.mobile-nav');
 const MOBILE_NAV_CLOSE = document.querySelector('.mobile-nav__close')
 const SONG_LINK = document.querySelectorAll('.song-link');
+const AUDIO = document.querySelectorAll('audio');
 
 TOGGLE_BUTTON.addEventListener('click', function() {
   MOBILE_NAV.classList.add('open-menu');
