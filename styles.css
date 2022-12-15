@@ -82,6 +82,11 @@ header {
   height: 1rem;
 }
 
+.mobile-nav .song-link {
+  font-size: 1.2rem;
+  margin:0.5rem;
+}
+
 .open-menu {
   transform: translate(0);
 }
